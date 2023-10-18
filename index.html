@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bar Chart</title>
+    <style>
+        text {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+        }
+
+        line {
+            stroke: #333; /* Color of axis lines */
+            stroke-width: 1;
+        }
+
+        #chart-title {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            text-anchor: middle;
+        }
+    </style>
+</head>
+<body>
+    <svg width="800" height="465">
+        <!-- Title -->
+        <text x="400" y="30" id="chart-title" text-anchor="middle">Muğla iline göre kaba ölüm hızı</text>
+
+        <!-- Y-Axis Line -->
+        <line x1="50" y1="450" x2="50" y2="30" />
+        <!-- X-Axis Line -->
+        <line x1="50" y1="450" x2="770" y2="450" />
+
+        <!-- Expanded Y-Axis Labels -->
+        <text x="30" y="450" text-anchor="end">0.0</text>
+        <text x="30" y="400" text-anchor="end">1.0</text>
+        <text x="30" y="350" text-anchor="end">2.0</text>
+        <text x="30" y="300" text-anchor="end">3.0</text>
+        <text x="30" y="250" text-anchor="end">4.0</text>
+        <text x="30" y="200" text-anchor="end">5.0</text>
+        <text x="30" y="150" text-anchor="end">6.0</text>
+        <text x="30" y="100" text-anchor="end">7.0</text>
+        <text x="30" y="50" text-anchor="end">8.0</text>
+        <text x="30" y="0" text-anchor="end">9.0</text>
+
+        <!-- Bars -->
+        <!-- Data columns -->
+        <rect x="70" y="185" width="30" height="265" fill="blue"></rect>
+        <rect x="120" y="180" width="30" height="270" fill="blue"></rect>
+        <rect x="170" y="175" width="30" height="275" fill="blue"></rect>
+        <rect x="220" y="180" width="30" height="270" fill="blue"></rect>
+        <rect x="270" y="190" width="30" height="260" fill="blue"></rect>
+        <rect x="320" y="180" width="30" height="270" fill="blue"></rect>
+        <rect x="370" y="160" width="30" height="290" fill="blue"></rect>
+        <rect x="420" y="155" width="30" height="295" fill="blue"></rect>
+        <rect x="470" y="145" width="30" height="305" fill="blue"></rect>
+        <rect x="520" y="160" width="30" height="290" fill="blue"></rect>
+        <rect x="570" y="145" width="30" height="305" fill="blue"></rect>
+        <rect x="620" y="125" width="30" height="325" fill="blue"></rect>
+        <rect x="670" y="70" width="30" height="380" fill="blue"></rect>
+        <rect x="720" y="80" width="30" height="370" fill="blue"></rect>
+
+
+        <path
+        d="M 80 185 L 130 180 L 180 175 L 230 180 L 280 190 L 330 180 L 380 160 L 430 155 L 480 145 L 530 160 L 580 145 L 630 125 L 680 70 L 730 80"
+        stroke="red"
+        stroke-width="3"
+        fill="none"/>
+        <!-- X-Axis Labels -->
+        <!-- Place each label below the corresponding bar -->
+        <text x="80" y="465" text-anchor="middle">2009</text>
+        <text x="130" y="465" text-anchor="middle">2010</text>
+        <text x="180" y="465" text-anchor="middle">2011</text>
+        <text x="230" y="465" text-anchor="middle">2012</text>
+        <text x="280" y="465" text-anchor="middle">2013</text>
+        <text x="330" y="465" text-anchor="middle">2014</text>
+        <text x="380" y="465" text-anchor="middle">2015</text>
+        <text x="430" y="465" text-anchor="middle">2016</text>
+        <text x="480" y="465" text-anchor="middle">2017</text>
+        <text x="530" y="465" text-anchor="middle">2018</text>
+        <text x="580" y="465" text-anchor="middle">2019</text>
+        <text x="630" y="465" text-anchor="middle">2020</text>
+        <text x="680" y="465" text-anchor="middle">2021</text>
+        <text x="730" y="465" text-anchor="middle">2022</text>
+    </svg>
+</body>
+</html>
